@@ -20,6 +20,18 @@
                 background-color: lightblue;
             }
         }
+
+        .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+        }
+
+            .flex-container > div {
+                background-color: #f1f1f1;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
     </style>
 </head>
 <body>
@@ -36,8 +48,13 @@
     </header>
     <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input type="email" id="email" placeholder="Enter your Email Address" required />
-        <input type="submit" id="submit" value="Submit"/>
+        <input type="submit" id="submit" value="Submit" />
     </form>
 
+    <div class="flex-container">
+        <div>Fanta</div>
+        <div>Coke</div>
+        <div>Fanta Lemon</div>
+    </div>
 </body>
 </html>
